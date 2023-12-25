@@ -125,7 +125,7 @@ function App() {
 
   return (
     <div className='grid grid-cols-12 divide-x divide-gray-300 h-screen'>
-      <aside className='col-span-4 px-4 h-screen overflow-y-auto'>
+      <aside className='col-span-3 px-4 h-screen overflow-y-auto'>
         {Array(6)
           .fill(0)
           .map((_, i) => {
@@ -147,7 +147,7 @@ function App() {
           })}
       </aside>
 
-      <main className='col-span-8 px-8 h-screen overflow-y-auto flex flex-col'>
+      <main className='col-span-9 px-8 h-screen overflow-y-auto flex flex-col'>
         <p>Your username: {username}</p>
         {typingUsersInTheRoom.length > 0 ? (
           <p>Typing: {typingUsersInTheRoom.join(', ')}</p>
@@ -161,11 +161,11 @@ function App() {
           )
         })}
         <div className='flex-grow' />
-        <div className='mb-8'>
+        <div className='mb-12'>
           <div className='relative'>
             <textarea
               id='chat-input'
-              className='block w-full resize-none rounded-xl border-none bg-slate-200 p-4  pr-20 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800 dark:text-slate-200 dark:placeholder-slate-400 dark:focus:ring-blue-600 sm:text-base'
+              className='block w-full resize-none rounded-xl border-none bg-slate-200 p-4 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-800 dark:text-slate-200 dark:placeholder-slate-400 dark:focus:ring-blue-600 sm:text-base'
               placeholder='Enter your message'
               rows='1'
               required
