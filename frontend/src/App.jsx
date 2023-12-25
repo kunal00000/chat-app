@@ -147,7 +147,7 @@ function App() {
           })}
       </aside>
 
-      <main className='col-span-9 px-8 h-screen overflow-y-auto flex flex-col'>
+      <main className='col-span-9 px-4 py-8 h-screen overflow-y-auto flex flex-col'>
         <p>Your username: {username}</p>
         {typingUsersInTheRoom.length > 0 ? (
           <p>Typing: {typingUsersInTheRoom.join(', ')}</p>
