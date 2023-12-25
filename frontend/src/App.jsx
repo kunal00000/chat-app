@@ -126,7 +126,7 @@ function App() {
   return (
     <div className='grid grid-cols-12 divide-x divide-gray-300 h-screen'>
       <aside className='col-span-4 px-4 h-screen overflow-y-auto'>
-        {Array(20)
+        {Array(6)
           .fill(0)
           .map((_, i) => {
             return (
