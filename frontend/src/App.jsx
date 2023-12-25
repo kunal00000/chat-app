@@ -36,7 +36,7 @@ function App() {
       }
     }
 
-    const socket = io('ws://localhost:3001')
+    const socket = io('wss://chat-mh9n.onrender.com')
 
     setMySocket(socket)
 
